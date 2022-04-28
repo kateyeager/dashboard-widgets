@@ -10,7 +10,7 @@
   
   .time { grid-area: 1 / 1 / 2 / 2; }
   .date { grid-area: 1 / 2 / 2 / 3; }
-  .weather { grid-area: 2 / 1 / 3 / 3; }
+  .weather { grid-area: 1 / 3 / 2 / 3; }
   
   
 
