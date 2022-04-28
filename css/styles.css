@@ -18,6 +18,8 @@
 section {
   background: lightgray;
   padding: 1em;
+  border-radius: 40px;
+  border: 2px solid black;
   
   /* Relative Parent. Absolute Child */
   position: relative;
