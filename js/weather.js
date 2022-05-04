@@ -27,6 +27,8 @@ fetch(url)
     <data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data>
     <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Placeholder">
   `;
+
+
   
   // Insert dynamic template to container
   weatherContainer.insertAdjacentHTML("afterbegin", template);

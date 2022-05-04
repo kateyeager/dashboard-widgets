@@ -18,11 +18,23 @@
   
 
 /* Widgets */
+body{
+  background-color: rgb(25, 0, 50);
+  font-family: 'Zen Maru Gothic';
+}
 section {
-  background: lightgray;
-  padding: 1em;
+  background-color: black;
+ 
+  margin: 1em;
+  padding: 2em;
   border-radius: 40px;
-  border: 2px solid black;
+  border: 1px solid black;
+ 
+    color: white;
+    height: 50vh
+    overflow: hidden;
+  
+
   
   /* Relative Parent. Absolute Child */
   position: relative;
@@ -30,9 +42,11 @@ section {
 
 /* Time */
 .time {
+ 
 }
 
 .hours {
+
 }
 
 .minutes {
