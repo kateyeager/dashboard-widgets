@@ -19,20 +19,27 @@
 
 /* Widgets */
 body{
-  margin: 40px;
+  margin: 50px;
   background-color: rgb(25, 0, 50);
   font-family: 'Zen Kaku Gothic New';
 }
+
+
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
   background-color: black;
  text-transform: uppercase;
   margin: 1em;
   padding: 2em;
   border-radius: 40px;
- 
+min-width: fit-content;
+min-height: fit-content;
   color: white;
-    /* height: 50vh; */
-    overflow: hidden;
+
+    overflow: auto;
   
 
   
@@ -40,13 +47,19 @@ section {
   position: relative;
 }
 
+
+
+
 h1 {
 font-family: 'Righteous';
-font-size: 7vh;
+/* font-size: auto; */
 }
 
 /* Time */
 .time {
+
+  font-weight: 500;
+  font-size: 1.75em;
 }
 
 .hours {
@@ -60,12 +73,14 @@ font-size: 7vh;
 }
 
 .amOrPM {
-  
+font-weight: 900;
 }
 
 /* Date */
 .date {
-  
+
+  font-weight: 500;
+  font-size: 1.75em;  
 }
 
 .month {
@@ -78,11 +93,15 @@ font-size: 7vh;
 }
 
 .dayOfWeek {
+  font-weight: 900;
 }
 
 /* Weather */
 .weather {
   
+
+ font-weight: 500; 
+ font-size: 1.75em;
 }
 
 .city {
@@ -94,5 +113,5 @@ font-size: 7vh;
 }
 
 .weather img {
-  
+
 }
