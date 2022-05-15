@@ -29,7 +29,7 @@ body{
   display: flex;
  
   /* justify-content: center; */
-  background: url('https://images.unsplash.com/photo-1486723312829-f32b4a25211b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');
+  background-image: src('assets/austen-frostad-5MkmD7n7tJ4-unsplash.jpg');
 background-size: cover;
   /* background-color: #1D1F20; */
   font-family: 'Zen Kaku Gothic New';
