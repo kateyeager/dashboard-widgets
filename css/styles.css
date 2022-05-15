@@ -40,13 +40,13 @@ text-align: center;
   background-color: white;
 padding: 6px;
  text-transform: uppercase;
-line-height: 1.5rem;
+line-height: 2rem;
 border-radius: 40px;
 min-width: 30vmax;
 width: auto;
 text-align: center;  
 color: black;
-
+height: auto;
     overflow: hidden;
   
 
@@ -87,8 +87,7 @@ font-weight: 900;
 /* Date */
 .date {
   display: flex;
-  flex-direction: column-reverse;
-
+  flex-direction: column;
 align-items: center;
   font-weight: 500;
 
@@ -96,22 +95,27 @@ align-items: center;
 
 .month {
 color: #00249e;
+justify-content: space-around;
+font-size: 4vw;
 }
 
 .dayOfMonth {
-width: 100vw;
-/* font-size: 2rem; */
+font-size: 15vw;
+
 color: #eb3402;
-/* line-height: 3rem; */
+font-weight: 100;
+line-height: 10vw;
 }
 
 .year {
   color: #00249e;
-  flex: auto;
+font-size: 4vw;
+font-weight: 300;
 }
 
 .dayOfWeek {
 color: #fc1577;
+font-size: 4.75vw;
 }
 
 
