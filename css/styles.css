@@ -16,7 +16,7 @@
     
  /* HTML */
     html {
-      /* font-size: calc(60% + 0.8vmin); */
+      font-size: calc(60% + 0.8vmin);
     } 
 
     main {
@@ -25,33 +25,33 @@
     }
 
 /* Widgets */
-body{
-  display: flex;
+body {
+  background-color: #1D1F20;
  
-  /* justify-content: center; */
-  background-image: src('assets/austen-frostad-5MkmD7n7tJ4-unsplash.jpg');
+  background-image: url("/assets/austen-frostad-5MkmD7n7tJ4-unsplash.jpg");
 background-size: cover;
-  /* background-color: #1D1F20; */
+/* background-repeat: no-repeat; */
+background-position: top;
   font-family: 'Zen Kaku Gothic New';
 }
 
 
 section {
+  display: flex;
 text-align: center;
-  background-color: transparent;
-  background: filter: blur(13px);
+  background-color: rgba(255, 255, 255, 0.748);
+ 
   padding: 2ch;
 
  text-transform: uppercase;
 border-top: 2px solid rgb(255, 255, 255);
 border-bottom: 2px solid rgb(255, 255, 255);
-position: sticky;
-border-radius: 40px;
-/* min-width: 30vmax; */
-width: auto;
- justify-content: space-around;
+
+border-radius: 30px;
+
+
+ justify-content: space-evenly;
 color: black;
-height: auto;
     overflow: visible;
   
 
@@ -59,7 +59,6 @@ height: auto;
   /* Relative Parent. Absolute Child */
   position: relative;
 }
-
 
 
 
