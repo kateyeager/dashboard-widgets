@@ -1,5 +1,6 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
 /* Grid */
 .layout {
   /* Set your own grid   */
@@ -20,7 +21,7 @@
     } 
 
     main {
-      max-width: 40rem;
+      max-width: 40vw;
       margin: 0 auto;
     }
 
@@ -32,7 +33,7 @@ body {
 background-size: cover;
 /* background-repeat: no-repeat; */
 background-position: top;
-  font-family: 'Zen Kaku Gothic New';
+font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 
@@ -40,14 +41,14 @@ section {
   display: flex;
 text-align: center;
   background-color: rgba(255, 255, 255, 0.748);
- 
+
   padding: 2ch;
 
  text-transform: uppercase;
 border-top: 2px solid rgb(255, 255, 255);
 border-bottom: 2px solid rgb(255, 255, 255);
 
-border-radius: 30px;
+border-radius: 15px;
 
 
  justify-content: space-evenly;
@@ -67,24 +68,32 @@ h1 {
 }
 
 /* Time */
-.time {
-display: none;
-  font-weight: 500;
-  font-size: 1.75em;
+.time{
+  width: min-content;
 }
 
 .hours {
-
+  color: #e60234;
+font-weight: 700;
+font-size: 5vw;
 }
 
 .minutes {
+  color: #008080;
+  font-weight: 500;
+  font-size: 5vw;
 }
 
 .seconds {
+  color: #174950;
+  font-weight: 400;
+  font-size: 5vw;
 }
 
 .amOrPM {
-font-weight: 900;
+  color: #8b0f32;
+font-weight: 300;
+font-size: 5vw;
 }
 
 /* Date */
@@ -106,7 +115,7 @@ font-size: 3vw;
 font-size: 15vw;
 
 color: #008080;
-font-weight: 100;
+font-weight: 300;
 line-height: 10vw;
 }
 
@@ -118,7 +127,7 @@ font-weight: 300;
 
 .dayOfWeek {
 color: #e60234;
-font-weight: 600;
+font-weight: 700;
 font-size: 5vw;
 }
 
@@ -126,20 +135,33 @@ font-size: 5vw;
 
 /* Weather */
 .weather {
-  display: none;
-
+flex-direction: row;
+min-width: 3vw;
  font-weight: 500; 
- font-size: 1.75em;
+ font-size: 3vw;
+
 }
 
 .city {
-  
+ color: #e60234;
+font-weight: 700;
+
 }
 
 .temp {
-  
+ color: #008080;
+}
+
+span {
+color: #8b0f32;
+}
+
+span, .feels_like {
+color: #174950;
 }
 
 .weather img {
 
+width: 100vw;
+height: auto;
 }
