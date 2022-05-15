@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Righteous&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
 /* Grid */
 .layout {
   /* Set your own grid   */
@@ -29,25 +29,30 @@ body{
   display: flex;
  
   /* justify-content: center; */
-  
-  background-color: black;
+  background: url('https://images.unsplash.com/photo-1486723312829-f32b4a25211b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');
+background-size: cover;
+  /* background-color: #1D1F20; */
   font-family: 'Zen Kaku Gothic New';
 }
 
 
 section {
 text-align: center;
-  background-color: white;
-padding: 6px;
+  background-color: transparent;
+  background: filter: blur(13px);
+  padding: 2ch;
+
  text-transform: uppercase;
-line-height: 2rem;
+border-top: 2px solid rgb(255, 255, 255);
+border-bottom: 2px solid rgb(255, 255, 255);
+position: sticky;
 border-radius: 40px;
-min-width: 30vmax;
+/* min-width: 30vmax; */
 width: auto;
-text-align: center;  
+ justify-content: space-around;
 color: black;
 height: auto;
-    overflow: hidden;
+    overflow: visible;
   
 
   
@@ -59,8 +64,7 @@ height: auto;
 
 
 h1 {
-font-family: 'Righteous';
-line-height: 0%;
+
 }
 
 /* Time */
@@ -88,34 +92,35 @@ font-weight: 900;
 .date {
   display: flex;
   flex-direction: column;
-align-items: center;
+
   font-weight: 500;
 
 }
 
 .month {
-color: #00249e;
-justify-content: space-around;
-font-size: 4vw;
+color: #174950;
+
+font-size: 3vw;
 }
 
 .dayOfMonth {
 font-size: 15vw;
 
-color: #eb3402;
+color: #008080;
 font-weight: 100;
 line-height: 10vw;
 }
 
 .year {
-  color: #00249e;
-font-size: 4vw;
+  color: #8b0f32;
+font-size: 3vw;
 font-weight: 300;
 }
 
 .dayOfWeek {
-color: #fc1577;
-font-size: 4.75vw;
+color: #e60234;
+font-weight: 600;
+font-size: 5vw;
 }
 
 
