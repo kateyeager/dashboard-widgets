@@ -68,40 +68,46 @@ h1 {
 }
 
 /* Time */
-.time{
-  width: min-content;
+.time {
+  flex-wrap: wrap;
+  
+  font-weight: 300;
+  font-size: 4vw;
+
+  height: min-content;
+
 }
 
 .hours {
-  color: #e60234;
-font-weight: 700;
-font-size: 5vw;
+  color: #8b0f32;
+
+
 }
 
 .minutes {
   color: #008080;
-  font-weight: 500;
-  font-size: 5vw;
+
+
 }
 
 .seconds {
   color: #174950;
-  font-weight: 400;
-  font-size: 5vw;
+min-width: 58px;
 }
 
 .amOrPM {
   color: #8b0f32;
 font-weight: 300;
-font-size: 5vw;
+
 }
 
 /* Date */
 .date {
   display: flex;
   flex-direction: column;
-
-  font-weight: 500;
+  width: min-content;
+  height: min-content;
+  font-weight: 400;
 
 }
 
@@ -113,7 +119,6 @@ font-size: 3vw;
 
 .dayOfMonth {
 font-size: 15vw;
-
 color: #008080;
 font-weight: 300;
 line-height: 10vw;
@@ -126,8 +131,8 @@ font-weight: 300;
 }
 
 .dayOfWeek {
-color: #e60234;
-font-weight: 700;
+color: #8b0f32;
+font-weight: 500;
 font-size: 5vw;
 }
 
@@ -136,32 +141,38 @@ font-size: 5vw;
 /* Weather */
 .weather {
 flex-direction: row;
-min-width: 3vw;
+flex-wrap: wrap;
+width: min-content;
+height: min-content;
  font-weight: 500; 
  font-size: 3vw;
-
+overflow: auto;
 }
 
 .city {
- color: #e60234;
-font-weight: 700;
-
+ color: #8b0f32;
+font-weight: 500;
+text-align: center;
+width: 100%;
+font-size: 5vw;
 }
 
 .temp {
  color: #008080;
+ width: 100%;
+ font-size: 8vw;
+font-weight: 300;
+line-height: 10vw;
 }
 
 span {
-color: #8b0f32;
-}
-
-span, .feels_like {
 color: #174950;
+font-size: 1.95vw;
+
+font-weight: 500;
+width: 100%;
 }
 
 .weather img {
-
-width: 100vw;
-height: auto;
+max-width: fit-content;
 }

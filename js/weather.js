@@ -27,12 +27,14 @@ fetch(url)
 
 <data value="${data.name}" class="city">${data.name}</data>
 
-<data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data>
-
-<html><span>Feels like </span></html>
-<data value="${data.main.feels_like}" class="feels_like">${data.main.feels_like}&#8457;</data>
+<data value="${data.main.temp}" class="temp">${data.main.temp}&#176;</data>
 
 <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" alt="Placeholder">
+
+<html><span>Feels like </html>
+<data value="${data.main.feels_like}" class="feels_like">${data.main.feels_like}&#8457;</data></span>
+
+
 
 `;
 
