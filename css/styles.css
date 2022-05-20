@@ -7,8 +7,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
+row-gap: 10px;
+column-gap: 10px;
+
     }
     
     .weather { grid-area: 2 / 1 / 3 / 3; }
@@ -21,17 +22,19 @@
     } 
 
     main {
-      max-width: 40vw;
-      margin: 0 auto;
+
+      height: 100vh;
+justify-content: center;
+align-items: center;
     }
 
 /* Widgets */
 body {
   background-color: #1D1F20;
- 
+overflow: hidden;
   background-image: url("/assets/austen-frostad-5MkmD7n7tJ4-unsplash.jpg");
 background-size: cover;
-/* background-repeat: no-repeat; */
+background-repeat: no-repeat;
 background-position: top;
 font-family: 'Zen Kaku Gothic New', sans-serif;
 }
@@ -39,19 +42,23 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
 
 section {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 text-align: center;
-  background-color: rgba(255, 255, 255, 0.748);
+  background-color: rgba(255, 255, 255, 0.575);
+object-fit: contain;
+height: 100%;
+width: 100%;
 
-  padding: 2ch;
+
 
  text-transform: uppercase;
 border-top: 2px solid rgb(255, 255, 255);
 border-bottom: 2px solid rgb(255, 255, 255);
 
-border-radius: 15px;
-
-
- justify-content: space-evenly;
+border-radius: 7px;
+align-items: space-around;
+ justify-content: center;
 color: black;
     overflow: visible;
   
@@ -69,44 +76,51 @@ h1 {
 
 /* Time */
 .time {
-  flex-wrap: wrap;
-  
-  font-weight: 300;
-  font-size: 4vw;
+flex-direction: column;
+text-align: center;
 
-  height: min-content;
+  font-weight: 400;
+  font-size: 11vw;
+
+line-height: 1;
+
 
 }
 
 .hours {
   color: #8b0f32;
 
+min-inline-size: 9vw;
 
 }
 
 .minutes {
+font-weight: 300;
   color: #008080;
 
 
 }
 
 .seconds {
+
   color: #174950;
-min-width: 58px;
+font-weight: 200;
+
+
 }
 
 .amOrPM {
   color: #8b0f32;
-font-weight: 300;
+font-weight: 200;
+font-size: 11vh;
 
 }
 
 /* Date */
 .date {
-  display: flex;
+
   flex-direction: column;
-  width: min-content;
-  height: min-content;
+
   font-weight: 400;
 
 }
@@ -114,11 +128,12 @@ font-weight: 300;
 .month {
 color: #174950;
 
-font-size: 3vw;
+font-size: 3.5vw;
+min-inline-size: 3vh;
 }
 
 .dayOfMonth {
-font-size: 15vw;
+font-size: 13vw;
 color: #008080;
 font-weight: 300;
 line-height: 10vw;
@@ -126,7 +141,8 @@ line-height: 10vw;
 
 .year {
   color: #8b0f32;
-font-size: 3vw;
+font-size: 3.5vw;
+min-inline-size: 3vh;
 font-weight: 300;
 }
 
@@ -134,45 +150,49 @@ font-weight: 300;
 color: #8b0f32;
 font-weight: 500;
 font-size: 5vw;
+min-inline-size: 5vh;
 }
 
 
 
 /* Weather */
 .weather {
-flex-direction: row;
-flex-wrap: wrap;
-width: min-content;
-height: min-content;
- font-weight: 500; 
- font-size: 3vw;
-overflow: auto;
+
+line-height: 1.25;
+justify-self: center;
+ font-weight: 500;
+ 
+text-align: center;
+
 }
 
 .city {
  color: #8b0f32;
 font-weight: 500;
-text-align: center;
-width: 100%;
-font-size: 5vw;
+/* line-height: 1.75; */
+padding-top: 2vh;
+font-size: 8vh;
 }
 
 .temp {
  color: #008080;
  width: 100%;
- font-size: 8vw;
+ font-size: 14vh;
 font-weight: 300;
-line-height: 10vw;
+/* line-height: 10vh; */
+
 }
 
 span {
 color: #174950;
-font-size: 1.95vw;
-
-font-weight: 500;
+font-size: 4vh;
 width: 100%;
+font-weight: 400;
+
 }
 
+
+
 .weather img {
-max-width: fit-content;
+
 }
