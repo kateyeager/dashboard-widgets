@@ -2,7 +2,7 @@ Katie's Web 3 Widgets
 
 # Dashboard Widgets
 
-[Spokane]
+[Spokane, WA]
 
 - Time
 - Date
@@ -27,3 +27,4 @@ The concept of a Dashboard appears nearly everywhere. Most obvious are car dashb
 
 - [CSS Grid Generator] https://cssgrid-generator.netlify.app/
 - [Current weather and forecast] https://openweathermap.org/
+- [Background Image] https://unsplash.com/photos/5MkmD7n7tJ4
